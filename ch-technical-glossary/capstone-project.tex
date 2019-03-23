@@ -1,0 +1,37 @@
+\section{Capstone Project}
+\begin{itemize}
+\item \textbf{CLEVR:\label{tg:clevr}} a dataset provided by \textcite{Johnson2017} for Compositional Language and Elementary Visual Reasoning, which provided inspiration for our task design, as did \textcite{Santoro} Sort-of-CLEVR task. More importantly, they open-sourced their dataset generation code on GitHub, which we adapted for creating our dataset. See \href{https://cs.stanford.edu/people/jcjohns/clevr/}{\emph{their website}} for a longer description and examples (beyond the one provided in the body).
+  
+\item \textbf{Coreset:\label{tg:coreset}} borrowing from other publications, we term the set of training examples allocated to a previous task as the coreset. We allocate half of the training set (22,500) images to all previous tasks, dividing evenly between all of them. Thus, during the second episode (see below), the entire 22,500 image coreset is allocated to the first task. During the third episode, each of the first and second tasks receives half the coreset, $22,500 / 2 = 11,250$ images. In the tenth and final episode, each of the first nine tasks receives $22,500 / 9 = 2500$ images.
+  
+\item \textbf{Dimension:\label{tg:dimension}} each object in our dataset can be defined by three independent dimensions: its color, its shape, and its texture, each taking on one of ten unique values (see \hyperref[tg:feature]{feature} below). 
+  
+\item \textbf{Episode and Epoch:\label{tg:episode-epoch}} both of these terms are used in machine learning and meta-learning in a variety of ways. For consistency, we consider an \textbf{epoch} as a single pass through the dataset. In the sequential benchmark, each input image is allocated to a single task, and the dataset is split half and half between the current task and the coreset for previous tasks, thus epochs during the first task include 22,500 images, and epochs from the second task forward include all 45,000 training set images. An \textbf{episode} is considered to be all training with the same queries. This one iteration of our sequential benchmark includes ten episodes: first task, first and second tasks, and so forth, until training on all ten tasks.
+  
+\item \textbf{Experimental conditions:\label{tg:experimental-condition}} we define three experimental conditions we explore in this work:
+  \begin{itemize}
+  \item \textbf{Simultaneous, heterogeneous dimensions:} introducing all tasks simultaneously, and training on all of them, across all three dimensions. These are the results reported when we establish that the baseline model can learn this task structure in a simple setting, and therefore merits investigation in a meta-learning setting.
+    
+  \item \textbf{Sequential, homogeneous dimension:} this is the setting we refer to as the sequential benchmark, introducing ten tasks from a single dimensions sequentially, and training on the available tasks during each episode (see above) until the held-out test-set accuracy on all of them rises above 95\%.
+    
+  \item \textbf{Sequential, heterogeneous dimensions:} this is our control condition for the sequential benchmark. Rather than training over ten tasks from the same dimension, we train over ten tasks split between the all three dimensions, four of one dimensions and three from the other two. This condition allows us to separate benefits gained by increased expertise within the domain of a single dimension from the benefits conferred by overall improved visual processing.
+  \end{itemize}
+  
+\item \textbf{Feature:\label{tg:feature}} each \hyperref[tg:dimension]{dimension} (see above) can take on one of ten unique values:
+  \begin{itemize}
+  \item \textbf{Color:} gray, red, blue, green, brown, purple, cyan, yellow, orange, pink.
+    
+  \item \textbf{Shape:} cube, sphere, cylinder, pyramid, cone, torus, rectangular box, ellipsoid, octahedron, dodecahedron
+    
+  \item \textbf{Texture:} metal, rubber, chainmail, marble, maze, metal weave, polka dots, rug, bathroom tiles, wooden planks.
+    
+  \item See example images here: \href{http://bit.ly/metalearning_50k_examples}{\emph{http://bit.ly/metalearning\_50k\_examples}}
+    
+  \item See exemplars for each feature here, organized by shape, and then by texture. Some of the shapes were updated after this preview was generated, but most remain in the final dataset: \href{http://bit.ly/metalearning_50k_feature_preview}{\emph{http://bit.ly/metalearning\_50k\_feature\_preview}}
+    
+  \end{itemize}
+
+\item \textbf{Query:\label{tg:query}} the different questions or tasks we train models on. In plain English, they would be ``is there an object matching this description in the image?'': ``is there a red object?'' ``is there a marbled object?'' ``is there a blue pyramid?'' These are presented to models as a 30x1 binary vector, where each element corresponds to a particular feature (ten colors, ten shapes, ten materials). Since we ask about a single object matching the description, we never turn on two features corresponding to the same dimension -\/- asking ``is there an object that's both a cube and a sphere?'' is meaningless.
+  
+\item \textbf{Visual question answering (VQA):\label{tg:vqa}} a paradigm proposed by \textcite{Antol2015} and expanded on by \textcite{Agrawal2016}, in which a model receives an image and a question (in natural language) and is trained to answer the question according to the visual data in the image. This paradigm also served as a source of inspiration for our dataset and task design.
+\end{itemize}

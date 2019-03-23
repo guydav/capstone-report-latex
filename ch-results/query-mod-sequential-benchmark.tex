@@ -1,5 +1,5 @@
 \FloatBarrier
-\section{Query-Modulated Models on Homogeneous, Sequential Benchmark}
+\section{Query-Modulated Models on Homogeneous, Sequential Benchmark\label{res:query-mod-sequential}}
 To more explicitly compare performance to the non-query-modulated model, we narrow our focus to the combined data from all dimensions and examine the ratio of examples required to reach criterion between each query-modulation level and the baseline model, as we did for the control (sequential, heterogeneous dimensions) condition. Figure \ref{fig:results-query-mod-benchmark-examples-to-criterion-comparison} plots these ratios in a manner paralleling Figure \ref{fig:results-control-sequential-examples-to-criterion}. The top panels depict the ratio of examples required to reach criterion by the number of times a task was trained on. While all query-modulated models learn the earlier tasks introduced faster (points above the $y=1$ line), this advantage diminishes by the latter times the model was trained on earlier tasks. Surprisingly, models with query modulation at the first and second levels learn the last few tasks slightly slower (points above the $y=1$ line) than the baseline model. On the other hand, models with query modulation at the third and fourth levels show better relative performance, both retaining an advantage on the earlier tasks introduced until the final task, and showing approximately equal performance on the later tasks introduced. The bottom panels, comparing the ratio of examples to the criterion by the number of tasks the model is training on, depict a similar tale. All query-modulated models better earlier and the third and fourth levels remain better later. 
 
 \begin{figure}[!htb]
@@ -23,7 +23,6 @@ Figure \ref{fig:results-query-mod-benchmark-first-task-accuracy-comparison} comp
 \end{figure}
 
 To statistically compare the performances of these different models, we considered the average on each of the fifty-five data points described above, of the log of the number of examples to criterion, and performed a nonparametric sign test (see ch. 7 of \cite{Kvam2007}) on the differences between the models. Intuitively, when models perform approximately equally, each model should perform better in a similar number of comparisons, resulting in a high p-value, while if one model consistently outperforms the other, we will see a lower p-value. Table \ref{tab:log-examples-sign-test} depicts the result of a sign test comparing every pair of models to each other. The only two comparisons that fail to be significant are between the baseline, non-query-modulated model and the first and second modulation level models. In every other case, the model modulating at a higher level performs better in the vast majority of the comparisons, suggesting that higher modulation levels infer some small overall benefit. 
-
 \begin{table}[ht]
 \centering
 \caption{Log examples to criterion sign test}
@@ -32,21 +31,19 @@ To statistically compare the performances of these different models, we consider
 \toprule
  \thead[cl]{Modulation level}   & \thead[cl]{ 1 }                           & \thead[cl]{ 2 }                                & \thead[cl]{ 3 }                                & \thead[cl]{ 4 }                                \\
 \midrule
- \thead[cl]{None}               & \makecell[cl]{ 28 $(n=55)$ \\ $p=1.0000$} & \makecell[cl]{ 34 $(n=55)$ \\ $p=0.1048$}      & \makecell[cl]{ 46 $(n=55)$ \\ $p=0.0000^{**}$} & \makecell[cl]{ 52 $(n=55)$ \\ $p=0.0000^{**}$} \\ \addlinespace[0.5em]
+ \thead[cl]{None}               & \makecell[cl]{ 27 $(n=55)$ \\ $p=1.0000$} & \makecell[cl]{ 34 $(n=55)$ \\ $p=0.1048$}      & \makecell[cl]{ 46 $(n=55)$ \\ $p=0.0000^{**}$} & \makecell[cl]{ 52 $(n=55)$ \\ $p=0.0000^{**}$} \\ \addlinespace[0.5em]
  \thead[cl]{ 1 }                &                                           & \makecell[cl]{ 41 $(n=55)$ \\ $p=0.0004^{**}$} & \makecell[cl]{ 51 $(n=55)$ \\ $p=0.0000^{**}$} & \makecell[cl]{ 54 $(n=55)$ \\ $p=0.0000^{**}$} \\ \addlinespace[0.5em]
  \thead[cl]{ 2 }                &                                           &                                                & \makecell[cl]{ 42 $(n=55)$ \\ $p=0.0001^{**}$} & \makecell[cl]{ 50 $(n=55)$ \\ $p=0.0000^{**}$} \\ \addlinespace[0.5em]
  \thead[cl]{ 3 }                &                                           &                                                &                                                & \makecell[cl]{ 42 $(n=54)$ \\ $p=0.0001^{**}$} \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item Sign test results on the differences between the log of the number of examples required to reach criterion, comparing the model in the row to the model in the column. For each sign test, we report the number of differences that were different between the models, the total sample size, and the sign test $p$ value. In all cases other than the first comparison (no modulation to first modulation level), the count of differences is the one in which the model in the column is better (requiring fewer examples to criterion). $*: p < 0.05, **: p < 0.01$.
+\item Sign test results on the differences between the log of the number of examples required to reach criterion, comparing the model in the row to the model in the column. For each sign test, we report the number of comparisons the model in the column did better on , the total sample size, and the sign test $p$ value. In all cases other than the first comparison (no modulation to first modulation level), the model in the column performed better (required fewer examples to criterion). $*: p < 0.05, **: p < 0.01$.
 \end{tablenotes}
 \end{threeparttable}
 \label{tab:log-examples-sign-test}
 \end{table}
-
 We then devised a second way to perform this comparison, for which we could not find evidence in the literature, but we believe it increases the robustness of the procedure. In our alternative comparison, we also consider the standard errors of the means (SEMs) of the results from these models. We can take an interval of one SEM around each of the results we are comparing, and if these intervals overlap, consider this comparison as tied, rather than count it in the sign test. This correction process introduces ‘ties’ in every pair of comparisons we make, but increases the robustness of our results, as we now require a difference to be beyond the margins of error when we consider it as part of our test. Table \ref{tab:log-examples-sign-test-with-sem} shows the results after applying this correction. We see that all models besides the first query-modulated model outperform the baseline model and that the first query-modulated model it also outdone by the other query-modulated models.
-
 \begin{table}[ht]
 \centering
 \caption{Log examples to criterion sign test with SEM}
@@ -62,17 +59,15 @@ We then devised a second way to perform this comparison, for which we could not 
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item Similar sign test to Table \ref{tab:log-examples-sign-test}, but treating results where one standard error of the mean (SEM) intervals overlap as ties, rather than as differences counted for one of the models. $*: p < 0.05, **: p < 0.01$.
+\item Similar sign test to Table \ref{tab:log-examples-sign-test}, but treating results where one standard error of the mean (SEM) intervals overlap as ties, rather than as differences counted for one of the models. The model in the column performed better than the model in the row in all cases. $*: p < 0.05, **: p < 0.01$.
 \end{tablenotes}
 \end{threeparttable}
 \label{tab:log-examples-sign-test-with-sem}
 \end{table}
-
-We then repeated this comparison on the measure of catastrophic forgetting. We compared the forty-five first episode with new task test-set accuracies, which produced similar results to the training examples comparison reported above. TABLE XXX shows the raw results, without accounting for the SEMs. Save for the comparison between models modulating at the third and fourth level, every comparison is statistically significant, and all prefer the model modulating at a later processing level. TABLE XXX depicts the results once we do account for the SEMs, as described above. All query-modulating models perform better than the baseline model, demonstrating once again that query-modulation confers benefits in catastrophic forgetting. Beyond that, the model modulating at the third convolution layer appears better than the one modulating at the first level, but barely so, as losing a single difference would push the p-value above 0.05. The only robust significant comparison is the model modulating at the fourth level outperforming the model modulating at the first one.
-
+We then repeated this comparison on the measure of catastrophic forgetting. We compared the forty-five first episode with new task test-set accuracies, which produced similar results to the training examples comparison reported above. Table \ref{tab:accuracy-sign-test} shows the raw results, without accounting for the SEMs. Save for the comparison between models modulating at the third and fourth level, every comparison is statistically significant, and all prefer the model modulating at a later processing level. Table \ref{tab:accuracy-sign-test-with-sem} depicts the results once we do account for the SEMs, as described above. All query-modulating models perform better than the baseline model, demonstrating once again that query-modulation confers benefits in catastrophic forgetting. Beyond that, the model modulating at the third convolution layer appears better than the one modulating at the first level, but barely so, as losing a single difference would push the p-value above 0.05. The only robust significant comparison is the model modulating at the fourth level outperforming the model modulating at the first one.
 \begin{table}[ht]
 \centering
-\caption{\textbf{TODO: FIXME} Log examples to criterion sign test}
+\caption{New episode first epoch accuracy difference sign test}
 \begin{threeparttable}
 \begin{tabular}{@{}lllll@{}}
 \toprule
@@ -85,15 +80,17 @@ We then repeated this comparison on the measure of catastrophic forgetting. We c
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item \textbf{TODO: FIXME} Sign test results on the differences between the log of the number of examples required to reach criterion, comparing the model in the row to the model in the column. For each sign test, we report the number of differences that were different between the models, the total sample size, and the sign test $p$ value. In all cases other than the first comparison (no modulation to first modulation level), the count of differences is the one in which the model in the column is better (requiring fewer examples to criterion). $*: p < 0.05, **: p < 0.01$.
+\item Sign test results on the differences between the new episode, first epoch accuracies, comparing the model in the row to the model in the column. For each sign test, we report the number of comparisons the model in the column did better on , the total sample size, and the sign test $p$ value. The model in the column performed better than the model in the row in all cases (showed higher first epoch accuracy more often). $*: p < 0.05, **: p < 0.01$.
 \end{tablenotes}
 \end{threeparttable}
-\label{tab:log-examples-sign-test}
+\label{tab:accuracy-sign-test}
+\vspace{-0.1in}
 \end{table}
 
 \begin{table}[ht]
+\vspace{-0.1in}
 \centering
-\caption{\textbf{TODO: FIXME} Log examples to criterion sign test}
+\caption{New episode first epoch accuracy difference sign test with SEM}
 \begin{threeparttable}
 \begin{tabular}{@{}lllll@{}}
 \toprule
@@ -106,8 +103,10 @@ We then repeated this comparison on the measure of catastrophic forgetting. We c
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
-\item \textbf{TODO: FIXME} Sign test results on the differences between the log of the number of examples required to reach criterion, comparing the model in the row to the model in the column. For each sign test, we report the number of differences that were different between the models, the total sample size, and the sign test $p$ value. In all cases other than the first comparison (no modulation to first modulation level), the count of differences is the one in which the model in the column is better (requiring fewer examples to criterion). $*: p < 0.05, **: p < 0.01$.
+\item Similar sign test to Table
+\ref{tab:accuracy-sign-test}, but treating results where one standard error of the mean (SEM) intervals overlap as ties, rather than as differences counted for one of the models. The model in the column performed better than the model in the row in all cases. $*: p < 0.05, **: p < 0.01$.
 \end{tablenotes}
 \end{threeparttable}
-\label{tab:log-examples-sign-test}
+\label{tab:accuracy-sign-test-with-sem}
+\vspace{-0.1in}
 \end{table}
