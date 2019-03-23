@@ -34,7 +34,7 @@ url = {https://goo.gl/tboqaN.},
 year = {2018}
 }
 @inproceedings{Aljundi2018,
-abstract = {Humans can learn in a continuous manner. Old rarely utilized knowledge can be overwritten by new incoming information while important, frequently used knowledge is prevented from being erased. In artificial learning systems, lifelong learning so far has focused mainly on accumulating knowledge over tasks and overcoming catastrophic forgetting. In this paper, we argue that, given the limited model capacity and the unlimited new information to be learned, knowledge has to be preserved or erased selectively. Inspired by neuroplasticity, we propose a novel approach for lifelong learning, coined Memory Aware Synapses (MAS). It computes the importance of the parameters of a neural network in an unsupervised and online manner. Given a new sample which is fed to the network , MAS accumulates an importance measure for each parameter of the network , based on how sensitive the predicted output function is to a change in this parameter. When learning a new task, changes to important parameters can then be penalized, effectively preventing important knowledge related to previous tasks from being overwritten. Further, we show an interesting connection between a local version of our method and Hebb's rule, which is a model for the learning process in the brain. We test our method on a sequence of object recognition tasks and on the challenging problem of learning an embedding for predicting {\textless}subject, predicate, object{\textgreater} triplets. We show state-of-the-art performance and, for the first time, the ability to adapt the importance of the parameters based on unlabeled data towards what the network needs (not) to forget, which may vary depending on test conditions.},
+abstract = {Humans can learn in a continuous manner. Old rarely utilized knowledge can be overwritten by new incoming information while important, frequently used knowledge is prevented from being erased. In artificial learning systems, lifelong learning so far has focused mainly on accumulating knowledge over tasks and overcoming catastrophic forgetting. In this paper, we argue that, given the limited model capacity and the unlimited new information to be learned, knowledge has to be preserved or erased selectively. Inspired by neuroplasticity, we propose a novel approach for lifelong learning, coined Memory Aware Synapses (MAS). It computes the importance of the parameters of a neural network in an unsupervised and online manner. Given a new sample which is fed to the network , MAS accumulates an importance measure for each parameter of the network , based on how sensitive the predicted output function is to a change in this parameter. When learning a new task, changes to important parameters can then be penalized, effectively preventing important knowledge related to previous tasks from being overwritten. Further, we show an interesting connection between a local version of our method and Hebb's rule, which is a model for the learning process in the brain. We test our method on a sequence of object recognition tasks and on the challenging problem of learning an embedding for predicting {\textless}subject, predicate, object{\textgreater}triplets. We show state-of-the-art performance and, for the first time, the ability to adapt the importance of the parameters based on unlabeled data towards what the network needs (not) to forget, which may vary depending on test conditions.},
 author = {Aljundi, Rahaf and Babiloni, Francesca and Elhoseiny, Mohamed and Rohrbach, Marcus and Tuytelaars, Tinne},
 booktitle = {ECCV},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Aljundi et al. - 2018 - Memory Aware Synapses Learning what (not) to forget.pdf:pdf},
@@ -73,13 +73,23 @@ title = {{Deep Compositional Question Answering with Neural Module Networks}},
 url = {https://arxiv.org/pdf/1511.02799.pdf},
 year = {2015}
 }
-@inproceedings{Antol2015,
-abstract = {We propose the task of free-form and open-ended Visual Question Answering (VQA). Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Mirroring real-world scenarios, such as helping the visually impaired, both the questions and answers are open-ended. Visual questions selectively target different areas of an image, including background details and underlying context. As a result, a system that succeeds at VQA typically needs a more detailed understanding of the image and complex reasoning than a system producing generic image captions. Moreover, VQA is amenable to automatic evaluation, since many open-ended answers contain only a few words or a closed set of answers that can be provided in a multiple-choice format. We provide a dataset containing ∼0.25M images, ∼0.76M questions, and ∼10M answers (www.visualqa.org), and discuss the information it provides. Numerous baselines and methods for VQA are provided and compared with human performance.},
+@article{Andrychowicz2016,
+abstract = {The move from hand-designed features to learned features in machine learning has been wildly successful. In spite of this, optimization algorithms are still designed by hand. In this paper we show how the design of an optimization algorithm can be cast as a learning problem, allowing the algorithm to learn to exploit structure in the problems of interest in an automatic way. Our learned algorithms, implemented by LSTMs, outperform generic, hand-designed competitors on the tasks for which they are trained, and also generalize well to new tasks with similar structure. We demonstrate this on a number of tasks, including simple convex problems, training neural networks, and styling images with neural art.},
 archivePrefix = {arXiv},
-arxivId = {1505.00468v6},
-author = {Antol, Stanislaw and Agrawal, Aishwarya and Lu, Jiasen and Mitchell, Margaret and Zitnick, C Lawrence and Batra, Dhruv and Parikh, Devi},
-booktitle = {International Conference on Computer Vision (ICCV)},
-eprint = {1505.00468v6},
+arxivId = {1606.04474},
+author = {Andrychowicz, Marcin and Denil, Misha and Gomez, Sergio and Hoffman, Matthew W and Pfau, David and Schaul, Tom and Shillingford, Brendan and de Freitas, Nando},
+eprint = {1606.04474},
+month = {jun},
+title = {{Learning to learn by gradient descent by gradient descent}},
+url = {http://arxiv.org/abs/1606.04474},
+year = {2016}
+}
+@inproceedings{Antol2015,
+abstract = {We propose the task of free-form and open-ended Visual Question Answering (VQA). Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Mirroring real-world scenarios, such as helping the visually impaired, both the questions and answers are open-ended. Visual questions selectively target different areas of an image, including background details and underlying context. As a result, a system that succeeds at VQA typically needs a more detailed understanding of the image and complex reasoning than a system producing generic image captions. Moreover, VQA is amenable to automatic evaluation, since many open-ended answers contain only a few words or a closed set of answers that can be provided in a multiple-choice format. We provide a dataset containing ∼0.25M images, ∼0.76M questions , and ∼10M answers (www.visualqa.org), and discuss the information it provides. Numerous baselines for VQA are provided and compared with human performance.},
+author = {Antol, Stanislaw and Agrawal, Aishwarya and Lu, Jiasen and Mitchell, Margaret and Batra, Dhruv and Zitnick, C Lawrence and Parikh, Devi},
+booktitle = {ICCV},
+file = {::},
+pages = {2425--2433},
 title = {{VQA: Visual Question Answering}},
 url = {www.visualqa.org},
 year = {2015}
@@ -100,13 +110,11 @@ volume = {4},
 year = {1993}
 }
 @book{Bailey2008,
-address = {Cambridge},
-author = {Bailey, R. A.},
-doi = {10.1017/CBO9780511611483},
+abstract = {This book should be on the shelf of every practising statistician who designs experiments. Good design considers units and treatments first, and then allocates treatments to units. It does not choose from a menu of named designs. This approach requires a notation for units that does not depend on the treatments applied. Most structure on the set of observational units, or on the set of treatments, can be defined by factors. This book develops a coherent framework for thinking about factors and their relationships, including the use of Hasse diagrams. These are used to elucidate structure, calculate degrees of freedom and allocate treatment subspaces to appropriate strata. Based on a one-term course the author has taught since 1989, the book is ideal for advanced undergraduate and beginning graduate courses. Examples, exercises and discussion questions are drawn from a wide range of real applications: from drug development, to agriculture, to manufacturing.},
+author = {Bailey, R.},
 isbn = {9780511611483},
-publisher = {Cambridge University Press},
-title = {{Design of Comparative Experiments}},
-url = {http://ebooks.cambridge.org/ref/id/CBO9780511611483 http://www.maths.qmul.ac.uk/{~}rab/DOEbook/},
+pages = {330},
+title = {{Design of comparative experiments}},
 year = {2008}
 }
 @inproceedings{Bengio1991,
@@ -133,6 +141,13 @@ month = {feb},
 title = {{Overcoming Multi-Model Forgetting}},
 url = {http://arxiv.org/abs/1902.08232},
 year = {2019}
+}
+@misc{BlenderOnlineCommunity2018,
+author = {{Blender Online Community}},
+publisher = {Blender Foundation},
+title = {{Blender - a 3D modelling and rendering package}},
+url = {https://www.blender.org/},
+year = {2018}
 }
 @article{Bojarski2016,
 abstract = {We trained a convolutional neural network (CNN) to map raw pixels from a single front-facing camera directly to steering commands. This end-to-end approach proved surprisingly powerful. With minimum training data from humans the system learns to drive in traffic on local roads with or without lane markings and on highways. It also operates in areas with unclear visual guidance such as in parking lots and on unpaved roads. The system automatically learns internal representations of the necessary processing steps such as detecting useful road features with only the human steering angle as the training signal. We never explicitly trained it to detect, for example, the outline of roads. Compared to explicit decomposition of the problem, such as lane marking detection, path planning, and control, our end-to-end system optimizes all processing steps simultaneously. We argue that this will eventually lead to better performance and smaller systems. Better performance will result because the internal components self-optimize to maximize overall system performance, instead of optimizing human-selected intermediate criteria, e.g., lane detection. Such criteria understandably are selected for ease of human interpretation which doesn't automatically guarantee maximum system performance. Smaller networks are possible because the system learns to solve the problem with the minimal number of processing steps. We used an NVIDIA DevBox and Torch 7 for training and an NVIDIA DRIVE(TM) PX self-driving car computer also running Torch 7 for determining where to drive. The system operates at 30 frames per second (FPS).},
@@ -171,7 +186,7 @@ title = {{Catastrophic Interference in Human Motor Learning}},
 url = {https://papers.nips.cc/paper/973-catastrophic-interference-in-human-motor-learning},
 year = {1994}
 }
-@article{Brown1988,
+@article{Brown1988a,
 abstract = {In a series of seven experiments we examined preschool children's ability to learn and transfer across problems that shared a common underlying structure but differed in surface manifestations. The problems involved novel uses of familiar tools or simple biological themes such as mimicry as a method of defense. In the first three studies, we examined children's ability to learn to transfer after being exposed to a variety of transfer situations. Three-year-olds benefit from conditions that encourage them to reflect upon relational similarity; four-year-olds show a learning to learn effect without prompts to look for similarity. Both ages rapidly form a mind set to look for analogous solutions across problems. In Studies 4 to 7, we looked at preschoolers' learning from examples. When required to explain why an example is an illustration of a general theme, transfer to other instances of that theme is rapid, often occurring on the basis of only one example. Explanations and elaborations provided by the children, either spontaneously or in response to prompts, are much more effective at promoting transfer than those provided by an experimenter. The data are discussed in terms of explanation or analysis-based models of both machine and human learning.},
 author = {Brown, Ann L and Kane, Mary Jo},
 doi = {10.1016/0010-0285(88)90014-X},
@@ -217,7 +232,8 @@ author = {Chen, Zhourong and Li, Yang and Bengio, Samy and Si, Si},
 eprint = {1811.11205v1},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Chen et al. - Unknown - GaterNet Dynamic Filter Selection in Convolutional Neural Network via a Dedicated Global Gating Network.pdf:pdf},
 title = {{GaterNet: Dynamic Filter Selection in Convolutional Neural Network via a Dedicated Global Gating Network}},
-url = {https://arxiv.org/pdf/1811.11205.pdf}
+url = {https://arxiv.org/pdf/1811.11205.pdf},
+year = {2018}
 }
 @article{Cukur2013,
 abstract = {The authors use functional magnetic resonance imaging to measure how the semantic representation changes when searching for different object categories in natural movies. They find tuning shifts that expand the representation of the attended category and of semantically related, but unattended, categories, and compress the representation of categories semantically dissimilar to the target.},
@@ -312,7 +328,7 @@ year = {2018}
 }
 @article{LiFei-Fei2006,
 abstract = {Learning visual models of object categories notoriously requires hundreds or thousands of training examples. We show that it is possible to learn much information about a category from just one, or a handful, of images. The key insight is that, rather than learning from scratch, one can take advantage of knowledge coming from previously learned categories, no matter how different these categories might be. We explore a Bayesian implementation of this idea. Object categories are represented by probabilistic models. Prior knowledge is represented as a probability density function on the parameters of these models. The posterior model for an object category is obtained by updating the prior in the light of one or more observations. We test a simple implementation of our algorithm on a database of 101 diverse object categories. We compare category models learned by an implementation of our Bayesian approach to models learned from by maximum likelihood (ML) and maximum a posteriori (MAP) methods. We find that on a database of more than 100 categories, the Bayesian approach produces informative models when the number of training examples is too small for other methods to operate successfully.},
-author = {Fei-Fei, L. and Fergus, R. and Perona, P.},
+author = {Fei-Fei, Li and Fergus, R. and Perona, P.},
 doi = {10.1109/TPAMI.2006.79},
 journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
 month = {apr},
@@ -350,15 +366,14 @@ title = {{Meta-Learning by the Baldwin Effect}},
 url = {https://arxiv.org/pdf/1806.07917.pdf},
 year = {2018}
 }
-@techreport{Finn2017,
-abstract = {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression , and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.},
-archivePrefix = {arXiv},
-arxivId = {arXiv:1703.03400v3},
+@article{Finn2017,
+abstract = {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is com-patible with any model trained with gradient de-scent and applicable to a variety of different learning problems, including classification, re-gression, and reinforcement learning. The goal of meta-learning is to train a model on a vari-ety of learning tasks, such that it can solve new learning tasks using only a small number of train-ing samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and acceler-ates fine-tuning for policy gradient reinforcement learning with neural network policies.},
 author = {Finn, Chelsea and Abbeel, Pieter and Levine, Sergey},
-eprint = {arXiv:1703.03400v3},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Finn, Abbeel, Levine - 2017 - Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks(2).pdf:pdf},
+journal = {Proceedings of the 34th International Conference on Machine Learning,},
 title = {{Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks}},
 url = {https://arxiv.org/pdf/1703.03400.pdf},
+volume = {70},
 year = {2017}
 }
 @techreport{Finn2018,
@@ -383,17 +398,53 @@ title = {{Probabilistic Model-Agnostic Meta-Learning}},
 url = {https://arxiv.org/pdf/1806.02817.pdf},
 year = {2018}
 }
+@article{French1999,
+abstract = {All natural cognitive systems, and, in particular, our own, gradually forget previously learned information. Plausible models of human cognition should therefore exhibit similar patterns of gradual forgetting of old information as new information is acquired. Only rarely does new learning in natural cognitive systems completely disrupt or erase previously learned information; that is, natural cognitive systems do not, in general, forget ‘catastrophically'. Unfortunately, though, catastrophic forgetting does occur under certain circumstances in distributed connectionist networks. The very features that give these networks their remarkable abilities to generalize, to function in the presence of degraded input, and so on, are found to be the root cause of catastrophic forgetting. The challenge in this field is to discover how to keep the advantages of distributed connectionist networks while avoiding the problem of catastrophic forgetting. In this article the causes, consequences and numerous solutions to the problem of catastrophic forgetting in neural networks are examined. The review will consider how the brain might have overcome this problem and will also explore the consequences of this solution for distributed connectionist networks.},
+author = {French, Robert M.},
+doi = {10.1016/S1364-6613(99)01294-2},
+issn = {1364-6613},
+journal = {Trends in Cognitive Sciences},
+month = {apr},
+number = {4},
+pages = {128--135},
+publisher = {Elsevier Current Trends},
+title = {{Catastrophic forgetting in connectionist networks}},
+url = {https://www.sciencedirect.com/science/article/pii/S1364661399012942},
+volume = {3},
+year = {1999}
+}
 @article{Garg2016,
 abstract = {We introduce a new paradigm to investigate unsupervised learning, reducing unsupervised learning to supervised learning. Specifically, we mitigate the subjectivity in unsupervised decision-making by leveraging knowledge acquired from prior, possibly heterogeneous, supervised learning tasks. We demonstrate the versatility of our framework via comprehensive expositions and detailed experiments on several unsupervised problems such as (a) clustering, (b) outlier detection, and (c) similarity prediction under a common umbrella of meta-unsupervised-learning. We also provide rigorous PAC-agnostic bounds to establish the theoretical foundations of our framework, and show that our framing of meta-clustering circumvents Kleinberg's impossibility theorem for clustering.},
 archivePrefix = {arXiv},
 arxivId = {1612.09030},
-author = {Garg, Vikas K. and Kalai, Adam Tauman},
+author = {Garg, Vikas K. and Kalai, Adam},
 eprint = {1612.09030},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Garg, Kalai - 2016 - Meta-Unsupervised-Learning A supervised approach to unsupervised learning.pdf:pdf},
-month = {dec},
 title = {{Meta-Unsupervised-Learning: A supervised approach to unsupervised learning}},
 url = {http://arxiv.org/abs/1612.09030},
-year = {2016}
+year = {2017}
+}
+@inproceedings{Garg2018,
+abstract = {We introduce a framework to leverage knowledge acquired from a repository of (heterogeneous) supervised datasets to new unsupervised datasets. Our perspective avoids the subjectivity inherent in unsupervised learning by reducing it to supervised learning, and provides a principled way to evaluate unsupervised algorithms. We demonstrate the versatility of our framework via simple agnostic bounds on unsupervised problems. In the context of clustering, our approach helps choose the number of clusters and the clustering algorithm, remove the outliers, and provably circumvent the Kleinberg's impossibility result. Experimental results across hundreds of problems demonstrate improved performance on unsupervised data with simple algorithms, despite the fact that our problems come from heterogeneous domains. Additionally, our framework lets us leverage deep networks to learn common features from many such small datasets, and perform zero shot learning.},
+archivePrefix = {arXiv},
+arxivId = {1709.05262},
+author = {Garg, Vikas K. and Kalai, Adam},
+booktitle = {NIPS},
+eprint = {1709.05262},
+file = {::},
+title = {{Supervising Unsupervised Learning}},
+url = {http://arxiv.org/abs/1709.05262},
+year = {2018}
+}
+@article{Goodfellow2015,
+abstract = {Catastrophic forgetting is a problem faced by many machine learning models and algorithms. When trained on one task, then trained on a second task, many machine learning models "forget" how to perform the first task. This is widely believed to be a serious problem for neural networks. Here, we investigate the extent to which the catastrophic forgetting problem occurs for modern neural networks, comparing both established and recent gradient-based training algorithms and activation functions. We also examine the effect of the relationship between the first task and the second task on catastrophic forgetting. We find that it is always best to train using the dropout algorithm--the dropout algorithm is consistently best at adapting to the new task, remembering the old task, and has the best tradeoff curve between these two extremes. We find that different tasks and relationships between tasks result in very different rankings of activation function performance. This suggests the choice of activation function should always be cross-validated.},
+archivePrefix = {arXiv},
+arxivId = {1312.6211},
+author = {Goodfellow, Ian J and Mirza, Mehdi and Xiao, Da and Courville, Aaron and Bengio, Yoshua},
+eprint = {1312.6211},
+title = {{An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks}},
+url = {http://arxiv.org/abs/1312.6211},
+year = {2015}
 }
 @article{Gopnik,
 abstract = {Three studies explored whether and when children could categorize objects on the basis of a novel underlying causal power. To test this we constructed a "blicket detector," a machine that lit up and played music when certain objects were placed on it. First, 2-, 3- and 4-year-old children saw that an object labeled as a "blicket" would set off the machine. In a categorization task, other objects were demonstrated on the machine. Some set it off and some did not. Children were asked to say which objects were "blickets." In an induction task, other objects were or were not labeled as "blickets." Children had to predict which objects would have the causal power to set off the machine. The causal power could conflict with perceptual properties of the object, such as color and shape. In an association task the object was associated with the machine's lighting up but did not cause it to light up. Even the youngest children sometimes used the causal power to determine the object's name rather than using its perceptual properties and sometimes used the object's name rather than its perceptual properties to predict the object's causal powers. Children rarely categorized the object on the basis of the associated event. Young children also sometimes made interesting memory errors-they incorrectly reported that objects with the same perceptual features had had the same causal power. These studies demonstrate that even very young children will easily and swiftly learn about a new causal power of an object and spontaneously use that information in classifying and naming the object.},
@@ -403,8 +454,9 @@ number = {5},
 pages = {1205--22},
 pmid = {11108092},
 title = {{Detecting blickets: how young children use information about novel causal powers in categorization and induction.}},
-url = {http://www.ncbi.nlm.nih.gov/pubmed/11108092 https://www.researchgate.net/profile/David{\_}Sobel/publication/239666424{\_}Detecting{\_}blickets{\_}How{\_}young{\_}children{\_}use{\_}information{\_}about{\_}causal{\_}properties{\_}in{\_}categorization{\_}and{\_}induction/links/00b4952c427c668f96000000.pdf},
-volume = {71}
+url = {http://www.ncbi.nlm.nih.gov/pubmed/11108092 https://www.researchgate.net/profile/David{\_}Sobel/publication/239666424{\_}Detecting{\_}blickets{\_}How{\_}young{\_}children{\_}use{\_}information{\_}about{\_}causal{\_}properties{\_}in{\_}categorization{\_}and{\_}induction/links/00b4952c427c668f96000000},
+volume = {71},
+year = {2000}
 }
 @techreport{Grant2018,
 abstract = {Meta-learning allows an intelligent agent to leverage prior learning episodes as a basis for quickly improving performance on a novel task. Bayesian hierarchical modeling provides a theoretical framework for formalizing meta-learning as inference for a set of parameters that are shared across tasks. Here, we reformulate the model-agnostic meta-learning algorithm (MAML) of Finn et al. (2017) as a method for probabilistic inference in a hierarchical Bayesian model. In contrast to prior methods for meta-learning via hierarchical Bayes, MAML is naturally applicable to complex function approximators through its use of a scalable gradient descent procedure for posterior inference. Furthermore, the identification of MAML as hierarchical Bayes provides a way to understand the algorithm's operation as a meta-learning procedure, as well as an opportunity to make use of computational strategies for efficient inference. We use this opportunity to propose an improvement to the MAML algorithm that makes use of techniques from approximate inference and curvature estimation.},
@@ -475,16 +527,17 @@ title = {{Relational inductive bias for physical construction in humans and mach
 url = {https://goo.gl/f7Ecw8},
 year = {2018}
 }
-@techreport{Hariharan2016,
+@inproceedings{Hariharan2016,
 abstract = {Representation learning Low-shot learning Feature extractor Base classes (many training examples) Classifier (base and novel categories) Novel classes (few training examples) Figure 1: Our low-shot learning benchmark in two phases: representation learning and low-shot learning. Modern recognition models use large labeled datasets like ImageNet to build good visual representations and train strong classifiers (representation learning). However, these datasets only contain a fixed set of classes. In many realistic scenarios, once deployed, the model might encounter novel classes that it also needs to recognize, but with very few training examples available (low-shot learning). We present two ways of significantly improving performance in this scenario: (1) a novel loss function for representation learning that leads to better visual representations that generalize well, and (2) a method for hallucinating additional examples for the data-starved novel classes. Abstract Low-shot visual learning-the ability to recognize novel object categories from very few examples-is a hallmark of human visual intelligence. Existing machine learning approaches fail to generalize in the same way. To make progress on this foundational problem, we present a low-shot learning benchmark on complex images that mimics challenges faced by recognition systems in the wild. We then propose (1) representation regularization techniques, and (2) techniques to hallucinate additional training examples for data-starved classes. Together, our methods improve the effectiveness of convolutional networks in low-shot learning, improving the one-shot accuracy on novel classes by 2.3× on the challenging ImageNet dataset.},
 archivePrefix = {arXiv},
 arxivId = {1606.02819v4},
 author = {Hariharan, Bharath and Girshick, Ross},
+booktitle = {ICCV},
 eprint = {1606.02819v4},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Hariharan, Girshick - Unknown - Low-shot Visual Recognition by Shrinking and Hallucinating Features.pdf:pdf},
 title = {{Low-shot Visual Recognition by Shrinking and Hallucinating Features}},
 url = {https://arxiv.org/pdf/1606.02819.pdf},
-year = {2016}
+year = {2017}
 }
 @article{Harrison2018,
 abstract = {Gaussian Process (GP) regression has seen widespread use in robotics due to its generality, simplicity of use, and the utility of Bayesian predictions. The predominant implementation of GP regression is a nonparameteric kernel-based approach, as it enables fitting of arbitrary nonlinear functions. However, this approach suffers from two main drawbacks: (1) it is computationally inefficient, as computation scales poorly with the number of samples; and (2) it can be data inefficient, as encoding prior knowledge that can aid the model through the choice of kernel and associated hyperparameters is often challenging and unintuitive. In this work, we propose ALPaCA, an algorithm for efficient Bayesian regression which addresses these issues. ALPaCA uses a dataset of sample functions to learn a domain-specific, finite-dimensional feature encoding, as well as a prior over the associated weights, such that Bayesian linear regression in this feature space yields accurate online predictions of the posterior predictive density. These features are neural networks, which are trained via a meta-learning (or "learning-to-learn") approach. ALPaCA extracts all prior information directly from the dataset, rather than restricting prior information to the choice of kernel hyperparameters. Furthermore, by operating in the weight space, it substantially reduces sample complexity. We investigate the performance of ALPaCA on two simple regression problems, two simulated robotic systems, and on a lane-change driving task performed by humans. We find our approach outperforms kernel-based GP regression, as well as state of the art meta-learning approaches, thereby providing a promising plug-in tool for many regression tasks in robotics where scalability and data-efficiency are important.},
@@ -579,11 +632,25 @@ title = {{Does Distributionally Robust Supervised Learning Give Robust Classifie
 url = {http://arxiv.org/abs/1611.02041},
 year = {2018}
 }
+@article{Hunter2007,
+abstract = {Matplotlib is a 2D graphics package used for Python
+for application development, interactive scripting, and
+publication-quality image generation across user
+interfaces and operating systems.},
+author = {Hunter, J D},
+doi = {10.1109/MCSE.2007.55},
+journal = {Computing In Science {\&} Engineering},
+number = {3},
+pages = {90--95},
+publisher = {IEEE COMPUTER SOC},
+title = {{Matplotlib: A 2D graphics environment}},
+volume = {9},
+year = {2007}
+}
 @misc{InteractiveStatisticalPages,
 author = {{Interactive Statistical Pages}},
 title = {{Latin Squares - Williams Design}},
-url = {http://statpages.info/latinsq.html},
-urldate = {2019-02-28}
+url = {http://statpages.info/latinsq.html}
 }
 @inproceedings{Johnson2017,
 abstract = {When building artificial intelligence systems that can reason and answer questions about visual data, we need diagnostic tests to analyze our progress and discover shortcomings. Existing benchmarks for visual question answering can help, but have strong biases that models can exploit to correctly answer questions without reasoning. They also conflate multiple sources of error, making it hard to pinpoint model weaknesses. We present a diagnostic dataset that tests a range of visual reasoning abilities. It contains minimal biases and has detailed annotations describing the kind of reasoning each question requires. We use this dataset to analyze a variety of modern visual reasoning systems, providing novel insights into their abilities and limitations.},
@@ -617,9 +684,21 @@ title = {{RATM: Recurrent Attentive Tracking Model}},
 url = {http://openaccess.thecvf.com/content{\_}cvpr{\_}2017{\_}workshops/w20/papers/Kahou{\_}RATM{\_}Recurrent{\_}Attentive{\_}CVPR{\_}2017{\_}paper.pdf},
 year = {2017}
 }
+@article{Kamra2017,
+abstract = {Despite advances in deep learning, neural networks can only learn multiple tasks when trained on them jointly. When tasks arrive sequentially, they lose performance on previously learnt tasks. This phenomenon called catastrophic forgetting is a fundamental challenge to overcome before neural networks can learn continually from incoming data. In this work, we derive inspiration from human memory to develop an architecture capable of learning continuously from sequentially incoming tasks, while averting catastrophic forgetting. Specifically, our contributions are: (i) a dual memory architecture emulating the complementary learning systems (hippocampus and the neocortex) in the human brain, (ii) memory consolidation via generative replay of past experiences, (iii) demonstrating advantages of generative replay and dual memories via experiments, and (iv) improved performance retention on challenging tasks even for low capacity models. Our architecture displays many characteristics of the mammalian memory and provides insights on the connection between sleep and learning.},
+archivePrefix = {arXiv},
+arxivId = {1710.10368},
+author = {Kamra, Nitin and Gupta, Umang and Liu, Yan},
+eprint = {1710.10368},
+file = {::},
+month = {oct},
+title = {{Deep Generative Dual Memory Network for Continual Learning}},
+url = {http://arxiv.org/abs/1710.10368},
+year = {2017}
+}
 @article{Kay2015,
 abstract = {Ventral temporal cortex (VTC) is the latest stage of the ventral “what” visual pathway, which is thought to code the identity of a stimulus regardless of its position or size [1, 2]. Surprisingly, recent studies show that position information can be decoded from VTC [3–5]. However, the computational mechanisms by which spatial information is encoded in VTC are unknown. Furthermore, how attention influences spatial representations in human VTC is also unknown because the effect of attention on spatial representations has only been examined in the dorsal “where” visual pathway [6–10]. Here, we fill these significant gaps in knowledge using an approach that combines functional magnetic resonance imaging and sophisticated computational methods. We first develop a population receptive field (pRF) model [11, 12] of spatial responses in human VTC. Consisting of spatial summation followed by a compressive nonlinearity, this model accurately predicts responses of individual voxels to stimuli at any position and size, explains how spatial information is encoded, and reveals a functional hierarchy in VTC. We then manipulate attention and use our model to decipher the effects of attention. We find that attention to the stimulus systematically and selectively modulates responses in VTC, but not early visual areas. Locally, attention increases eccentricity, size, and gain of individual pRFs, thereby increasing position tolerance. However, globally, these effects reduce uncertainty regarding stimulus location and actually increase position sensitivity of distributed responses across VTC. These results demonstrate that attention actively shapes and enhances spatial representations in the ventral visual pathway.},
-author = {Kay, Kendrick N. and Weiner, Kevin S. and Grill-Spector, Kalanit},
+author = {Kay, Kendrick N and Weiner, Kevin S and Grill-Spector, Kalanit},
 doi = {10.1016/J.CUB.2014.12.050},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Kay, Weiner, Grill-Spector - 2015 - Attention Reduces Spatial Uncertainty in Human Ventral Temporal Cortex.pdf:pdf},
 issn = {0960-9822},
@@ -633,11 +712,12 @@ url = {https://www-sciencedirect-com.ccl.idm.oclc.org/science/article/pii/S09609
 volume = {25},
 year = {2015}
 }
-@article{Kemker2017,
+@inproceedings{Kemker2018,
 abstract = {Incremental class learning involves sequentially learning classes in bursts of examples from the same class. This violates the assumptions that underlie methods for training standard deep neural networks, and will cause them to suffer from catastrophic forgetting. Arguably, the best method for incremental class learning is iCaRL, but it requires storing training examples for each class, making it challenging to scale. Here, we propose FearNet for incremental class learning. FearNet is a generative model that does not store previous examples, making it memory efficient. FearNet uses a brain-inspired dual-memory system in which new memories are consolidated from a network for recent memories inspired by the mammalian hippocampal complex to a network for long-term storage inspired by medial prefrontal cortex. Memory consolidation is inspired by mechanisms that occur during sleep. FearNet also uses a module inspired by the basolateral amygdala for determining which memory system to use for recall. FearNet achieves state-of-the-art performance at incremental class learning on image (CIFAR-100, CUB-200) and audio classification (AudioSet) benchmarks.},
 archivePrefix = {arXiv},
 arxivId = {1711.10563},
 author = {Kemker, Ronald and Kanan, Christopher},
+booktitle = {ICLR},
 eprint = {1711.10563},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Kemker, Kanan - 2017 - FearNet Brain-Inspired Model for Incremental Learning.pdf:pdf},
 month = {nov},
@@ -706,13 +786,12 @@ url = {http://www.ncbi.nlm.nih.gov/pubmed/21764294 https://linkinghub.elsevier.c
 volume = {21},
 year = {2011}
 }
-@techreport{Krizhevsky2012,
-abstract = {We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes. On the test data, we achieved top-1 and top-5 error rates of 37.5{\%} and 17.0{\%} which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully-connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of the convolution operation. To reduce overfitting in the fully-connected layers we employed a recently-developed regularization method called "dropout" that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3{\%}, compared to 26.2{\%} achieved by the second-best entry.},
+@article{Krizhevsky2013,
+abstract = {We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 dif-ferent classes. On the test data, we achieved top-1 and top-5 error rates of 37.5{\%} and 17.0{\%} which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully-connected layers with a final 1000-way softmax. To make train-ing faster, we used non-saturating neurons and a very efficient GPU implemen-tation of the convolution operation. To reduce overfitting in the fully-connected layers we employed a recently-developed regularization method called " dropout " that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3{\%}, compared to 26.2{\%} achieved by the second-best entry.},
 author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
 file = {:Users/guydavidson/Downloads/capstone.bib:bib},
 title = {{ImageNet Classification with Deep Convolutional Neural Networks}},
-url = {https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf},
-year = {2012}
+year = {2013}
 }
 @inproceedings{Krogh1992,
 abstract = {It has been observed in numerical simulations that a weight decay can improve generalization in a feed-forward neural network. This paper explains why. It is proven that a weight decay has two effects in a linear network. First, it suppresses any irrelevant components of the weight vector by choosing the smallest vector that solves the learning problem. Second, if the size is chosen right, a weight decay can suppress some of the effects of static noise on the targets, which improves generalization quite a lot. It is then shown how to extend these results to networks with hidden layers and non-linear units. Finally the theory is confirmed by some numerical simulations using the data from NetTalk.},
@@ -786,13 +865,28 @@ url = {http://www.ncbi.nlm.nih.gov/pubmed/26659050},
 volume = {350},
 year = {2015}
 }
+@article{Lake2019,
+abstract = {Three years ago, we released the Omniglot dataset for developing more human-like learning algorithms. Omniglot is a one-shot learning challenge, inspired by how people can learn a new concept from just one or a few examples. Along with the dataset, we proposed a suite of five challenge tasks and a computational model based on probabilistic program induction that addresses them. The computational model, although powerful, was not meant to be the final word on Omniglot; we hoped that the machine learning community would both build on our work and develop novel approaches to tackling the challenge. In the time since, we have been pleased to see the wide adoption of Omniglot and notable technical progress. There has been genuine progress on one-shot classification, but it has been difficult to measure since researchers have adopted different splits and training procedures that make the task easier. The other four tasks, while essential components of human conceptual understanding, have received considerably less attention. We review the progress so far and conclude that neural networks are still far from human-like concept learning on Omniglot, a challenge that requires performing all of the tasks with a single model. We also discuss new tasks to stimulate further progress.},
+archivePrefix = {arXiv},
+arxivId = {1902.03477},
+author = {Lake, Brenden M and Salakhutdinov, Ruslan and Tenenbaum, Joshua B},
+eprint = {1902.03477},
+file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Lake, Salakhutdinov, Tenenbaum - 2019 - The Omniglot Challenge A 3-Year Progress Report.pdf:pdf},
+month = {feb},
+title = {{The Omniglot Challenge: A 3-Year Progress Report}},
+url = {http://arxiv.org/abs/1902.03477},
+year = {2019}
+}
 @article{Lake2017,
 abstract = {Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats that of humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn and how they learn it. Specifically, we argue that these machines should (1) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (2) ground learning in intuitive theories of physics and psychology to support and enrich the knowledge that is learned; and (3) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes toward these goals that can combine the strengths of recent neural network advances with more structured cognitive models.},
 author = {Lake, Brenden M and Ullman, Tomer D and Tenenbaum, Joshua B and Gershman, Samuel J},
 doi = {10.1017/S0140525X16001837},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Lake et al. - 2017 - Building machines that learn and think like people.pdf:pdf},
+journal = {Behavioral and Brain Sciences},
+number = {e253},
 title = {{Building machines that learn and think like people}},
-url = {http://cims.nyu.edu/{~}brenden/http://www.mit.edu/{~}tomeru/http://web.mit.edu/cocosci/josh.htmlhttp://gershmanlab.webfactional.com/index.html},
+url = {http://cims.nyu.edu/{~}brenden/ http://www.mit.edu/{~}tomeru/ http://web.mit.edu/cocosci/josh.html http://gershmanlab.webfactional.com/index.html},
+volume = {40},
 year = {2017}
 }
 @inproceedings{Lake2011,
@@ -802,18 +896,6 @@ booktitle = { Conference of the Cognitive Science Society (CogSci)},
 title = {{One shot learning of simple visual concepts}},
 url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.207.8634 https://cims.nyu.edu/{~}brenden/LakeEtAl2011CogSci.pdf},
 year = {2011}
-}
-@article{Lake2019,
-abstract = {Three years ago, we released the Omniglot dataset for developing more human-like learning algorithms. Omniglot is a one-shot learning challenge, inspired by how people can learn a new concept from just one or a few examples. Along with the dataset, we proposed a suite of five challenge tasks and a computational model based on probabilistic program induction that addresses them. The computational model, although powerful, was not meant to be the final word on Omniglot; we hoped that the machine learning community would both build on our work and develop novel approaches to tackling the challenge. In the time since, we have been pleased to see the wide adoption of Omniglot and notable technical progress. There has been genuine progress on one-shot classification, but it has been difficult to measure since researchers have adopted different splits and training procedures that make the task easier. The other four tasks, while essential components of human conceptual understanding, have received considerably less attention. We review the progress so far and conclude that neural networks are still far from human-like concept learning on Omniglot, a challenge that requires performing all of the tasks with a single model. We also discuss new tasks to stimulate further progress.},
-archivePrefix = {arXiv},
-arxivId = {1902.03477},
-author = {Lake, Brenden M. and Salakhutdinov, Ruslan and Tenenbaum, Joshua B.},
-eprint = {1902.03477},
-file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Lake, Salakhutdinov, Tenenbaum - 2019 - The Omniglot Challenge A 3-Year Progress Report.pdf:pdf},
-month = {feb},
-title = {{The Omniglot Challenge: A 3-Year Progress Report}},
-url = {http://arxiv.org/abs/1902.03477},
-year = {2019}
 }
 @article{Lansdell2018,
 abstract = {In good old-fashioned artificial intelligence (GOFAI), humans specified systems that solved problems. Much of the recent progress in AI has come from replacing human insights by learning. However, learning itself is still usually built by humans -- specifically the choice that parameter updates should follow the gradient of a cost function. Yet, in analogy with GOFAI, there is no reason to believe that humans are particularly good at defining such learning systems: we may expect learning itself to be better if we learn it. Recent research in machine learning has started to realize the benefits of that strategy. We should thus expect this to be relevant for neuroscience: how could the correct learning rules be acquired? Indeed, cognitive science has long shown that humans learn-to-learn, which is potentially responsible for their impressive learning abilities. Here we discuss ideas across machine learning, neuroscience, and cognitive science that matter for the principle of learning-to-learn.},
@@ -983,7 +1065,7 @@ year = {2018}
 abstract = {Practice, and the performance improvement that it engenders, has long been a major topic in psychology. In this paper, both experimental and theoretical approaches are employed in an investigation of the mechanisms underlying this improvement. On the experimental side, it is argued that a single law, the power law of practice, adequately describes all of the practice data. On the theoretical side, a model of practice rooted in modern cognitive psychology, the chunking theory of learning, is formulated. The paper consists of (1) the presentation of a set of empirical practice curves; (2) mathematical investigations into the nature of power law functions; (3) evaluations of the ability of three different classes of functions to adequately model the empirical curves; (4) a discussion of the existing models of practice; and (5) a presentation of the chunking theory of learning.},
 author = {Newell, Allen and Rosenbloom, Paul S},
 booktitle = {Cognitive Skills and their Acquisition},
-edition = {Hillsdale, NJ},
+edition = {Hillsdale,},
 editor = {Anderson, J. R.},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Newell, Rosenbloom - 1980 - Mechanisms of Skill Acquisition and the Law of Practice.pdf:pdf},
 publisher = {Erlbaum},
@@ -1012,7 +1094,8 @@ author = {Nichol, Alex and Achiam, Joshua and Openai, John Schulman},
 eprint = {arXiv:1803.02999v2},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Nichol, Achiam, Openai - Unknown - On First-Order Meta-Learning Algorithms.pdf:pdf},
 title = {{On First-Order Meta-Learning Algorithms}},
-url = {https://arxiv.org/pdf/1803.02999.pdf}
+url = {https://arxiv.org/pdf/1803.02999.pdf},
+year = {2018}
 }
 @article{Olah2017,
 author = {Olah, Chris and Mordvintsev, Alexander and Schubert, Ludwig},
@@ -1029,7 +1112,7 @@ year = {2017}
 }
 @article{Parisi2019,
 abstract = {Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for computational learning systems and autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. Although significant advances have been made in domain-specific learning with neural networks, extensive research efforts are required for the development of robust lifelong learning on autonomous agents and robots. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.},
-author = {Parisi, German I. and Kemker, Ronald and Part, Jose L. and Kanan, Christopher and Wermter, Stefan},
+author = {Parisi, German I and Kemker, Ronald and Part, Jose L and Kanan, Christopher and Wermter, Stefan},
 doi = {10.1016/J.NEUNET.2019.01.012},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Parisi et al. - 2019 - Continual lifelong learning with neural networks A review.pdf:pdf},
 journal = {Neural Networks},
@@ -1041,17 +1124,27 @@ url = {https://www-sciencedirect-com.ccl.idm.oclc.org/science/article/pii/S08936
 volume = {113},
 year = {2019}
 }
-@article{Perez2017,
+@inproceedings{Perez2017,
 abstract = {We introduce a general-purpose conditioning method for neural networks called FiLM: Feature-wise Linear Modulation. FiLM layers influence neural network computation via a simple, feature-wise affine transformation based on conditioning information. We show that FiLM layers are highly effective for visual reasoning - answering image-related questions which require a multi-step, high-level process - a task which has proven difficult for standard deep learning methods that do not explicitly model reasoning. Specifically, we show on visual reasoning tasks that FiLM layers 1) halve state-of-the-art error for the CLEVR benchmark, 2) modulate features in a coherent manner, 3) are robust to ablations and architectural modifications, and 4) generalize well to challenging, new data from few examples or even zero-shot.},
 archivePrefix = {arXiv},
 arxivId = {1709.07871},
 author = {Perez, Ethan and Strub, Florian and de Vries, Harm and Dumoulin, Vincent and Courville, Aaron},
+booktitle = {AAAI'18},
 eprint = {1709.07871},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Perez et al. - 2017 - FiLM Visual Reasoning with a General Conditioning Layer.pdf:pdf},
 month = {sep},
 title = {{FiLM: Visual Reasoning with a General Conditioning Layer}},
 url = {http://arxiv.org/abs/1709.07871},
-year = {2017}
+year = {2018}
+}
+@inproceedings{Pratt1993,
+abstract = {Previously, we have introduced the idea of neural network transfer, where learning on a target problem is sped up by using the weights obtained from a network trained for a related source task. Here, we present a new algorithm. called Discriminability-Based Transfer (DBT), which uses an information measure to estimate the utility of hyperplanes defined by source weights in the target network, and rescales transferred weight magnitudes accordingly. Several experiments demonstrate that target networks initialized via DBT learn significantly faster than networks initialized randomly.},
+author = {Pratt, L Y},
+booktitle = {NIPS},
+file = {::},
+title = {{Discriminability-Based Transfer between Neural Networks}},
+url = {http://papers.nips.cc/paper/641-discriminability-based-transfer-between-neural-networks.pdf},
+year = {1993}
 }
 @techreport{Raposo2017,
 abstract = {Our world can be succinctly and compactly described as structured scenes of objects and relations. A typical room, for example, contains salient objects such as tables, chairs and books, and these objects typically relate to each other by their underlying causes and semantics. This gives rise to correlated features, such as position, function and shape. Humans exploit knowledge of objects and their relations for learning a wide spectrum of tasks, and more generally when learning the structure underlying observed data. In this work, we introduce relation networks (RNs)-a general purpose neural network architecture for object-relation reasoning. We show that RNs are capable of learning object relations from scene description data. Furthermore, we show that RNs can act as a bottleneck that induces the factorization of objects from entangled scene description inputs, and from distributed deep representations of scene images provided by a variational autoencoder. The model can also be used in conjunction with differentiable memory mechanisms for implicit relation discovery in one-shot learning tasks. Our results suggest that relation networks are a potentially powerful architecture for solving a variety of problems that require object relation reasoning.},
@@ -1065,26 +1158,26 @@ title = {{Discovering objects and their relations from entangled scene represent
 url = {https://arxiv.org/pdf/1702.05068.pdf},
 year = {2017}
 }
+@techreport{Ritter2017,
+abstract = {Deep neural networks (DNNs) have achieved unprecedented performance on a wide range of complex tasks, rapidly outpacing our understanding of the nature of their solutions. This has caused a recent surge of interest in methods for rendering modern neural systems more inter-pretable. In this work, we propose to address the interpretability problem in modern DNNs using the rich history of problem descriptions, theories and experimental methods developed by cog-nitive psychologists to study the human mind. To explore the potential value of these tools, we chose a well-established analysis from developmental psychology that explains how children learn word labels for objects, and applied that analysis to DNNs. Using datasets of stimuli inspired by the original cognitive psychology experiments, we find that state-of-the-art one shot learning models trained on ImageNet exhibit a similar bias to that observed in humans: they prefer to categorize objects according to shape rather than color. The magnitude of this shape bias varies greatly among architecturally identical, but differently seeded models , and even fluctuates within seeds throughout training, despite nearly equivalent classification performance. These results demonstrate the capability of tools from cognitive psychology for exposing hidden computational properties of DNNs, while concurrently providing us with a computational model for human word learning.},
+archivePrefix = {arXiv},
+arxivId = {1706.08606v2},
+author = {Ritter, Samuel and Barrett, David G T and Santoro, Adam and Botvinick, Matt M},
+eprint = {1706.08606v2},
+file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Ritter et al. - 2017 - Cognitive Psychology for Deep Neural Networks A Shape Bias Case Study(2).pdf:pdf},
+title = {{Cognitive Psychology for Deep Neural Networks: A Shape Bias Case Study}},
+url = {https://arxiv.org/pdf/1706.08606.pdf},
+year = {2017}
+}
 @inproceedings{Ritter2018a,
 abstract = {Recent research has placed episodic reinforcement learning (RL) alongside model-free and model-based RL on the list of processes centrally involved in human reward-based learning. In the present work, we extend the unified account of model-free and model-based RL developed by Wang et al. (2018) to further integrate episodic learning. In this account, a generic model-free "meta-learner" learns to deploy and coordinate among all of these learning algorithms. The meta-learner learns through brief encounters with many novel tasks, so that it learns to learn about new tasks. We show that when equipped with an episodic memory system inspired by theories of reinstatement and gating, the meta-learner learns to use the episodic and model-based learning algorithms observed in humans in a task designed to dissociate among the influences of various learning strategies. We discuss implications and predictions of the model.},
-author = {Ritter, S and Wang, J X and Kurth-Nelson, Z and Botvinick, M},
+author = {Ritter, Samuel and Wang, Jane X and Kurth-Nelson, Zeb and Botvinick, M},
 booktitle = {CogSci},
 doi = {10.1101/360537},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Ritter et al. - 2018 - Episodic Control as Meta-Reinforcement Learning.pdf:pdf},
 title = {{Episodic Control as Meta-Reinforcement Learning}},
 url = {http://dx.doi.org/10.1101/360537},
 year = {2018}
-}
-@techreport{Ritter2017,
-abstract = {Deep neural networks (DNNs) have achieved unprecedented performance on a wide range of complex tasks, rapidly outpacing our understanding of the nature of their solutions. This has caused a recent surge of interest in methods for rendering modern neural systems more inter-pretable. In this work, we propose to address the interpretability problem in modern DNNs using the rich history of problem descriptions, theories and experimental methods developed by cog-nitive psychologists to study the human mind. To explore the potential value of these tools, we chose a well-established analysis from developmental psychology that explains how children learn word labels for objects, and applied that analysis to DNNs. Using datasets of stimuli inspired by the original cognitive psychology experiments, we find that state-of-the-art one shot learning models trained on ImageNet exhibit a similar bias to that observed in humans: they prefer to categorize objects according to shape rather than color. The magnitude of this shape bias varies greatly among architecturally identical, but differently seeded models , and even fluctuates within seeds throughout training, despite nearly equivalent classification performance. These results demonstrate the capability of tools from cognitive psychology for exposing hidden computational properties of DNNs, while concurrently providing us with a computational model for human word learning.},
-archivePrefix = {arXiv},
-arxivId = {arXiv:1706.08606v2},
-author = {Ritter, Samuel and Barrett, David G T and Santoro, Adam and Botvinick, Matt M},
-eprint = {arXiv:1706.08606v2},
-file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Ritter et al. - 2017 - Cognitive Psychology for Deep Neural Networks A Shape Bias Case Study(2).pdf:pdf},
-title = {{Cognitive Psychology for Deep Neural Networks: A Shape Bias Case Study}},
-url = {https://arxiv.org/pdf/1706.08606.pdf},
-year = {2017}
 }
 @techreport{Ritter2018,
 abstract = {Meta-learning agents excel at rapidly learning new tasks from open-ended task distributions; yet, they forget what they learn about each task as soon as the next begins. When tasks reoc-cur-as they do in natural environments-meta-learning agents must explore again instead of immediately exploiting previously discovered solutions. We propose a formalism for generating open-ended yet repetitious environments, then develop a meta-learning architecture for solving these environments. This architecture melds the standard LSTM working memory with a differ-entiable neural episodic memory. We explore the capabilities of agents with this episodic LSTM in five meta-learning environments with reoccur-ring tasks, ranging from bandits to navigation and stochastic sequential decision problems.},
@@ -1126,17 +1219,6 @@ title = {{Meta-Learning with Memory-Augmented Neural Networks}},
 url = {http://proceedings.mlr.press/v48/santoro16.pdf},
 year = {2016}
 }
-@techreport{Santoro2016a,
-abstract = {Despite recent breakthroughs in the applications of deep neural networks, one setting that presents a persistent challenge is that of "one-shot learning ." Traditional gradient-based networks require a lot of data to learn, often through extensive iterative training. When new data is encountered, the models must inefficiently relearn their parameters to adequately incorporate the new information without catastrophic interference. Architec-tures with augmented memory capacities, such as Neural Turing Machines (NTMs), offer the ability to quickly encode and retrieve new information , and hence can potentially obviate the down-sides of conventional models. Here, we demonstrate the ability of a memory-augmented neu-ral network to rapidly assimilate new data, and leverage this data to make accurate predictions after only a few samples. We also introduce a new method for accessing an external memory that focuses on memory content, unlike previous methods that additionally use memory location-based focusing mechanisms.},
-archivePrefix = {arXiv},
-arxivId = {1605.06065v1},
-author = {Santoro, Adam and Bartunov, Sergey and Botvinick, Matthew and Wierstra, Daan and Lillicrap, Timothy and Deepmind, Google},
-eprint = {1605.06065v1},
-file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Santoro et al. - 2016 - One-shot Learning with Memory-Augmented Neural Networks Google DeepMind.pdf:pdf},
-title = {{One-shot Learning with Memory-Augmented Neural Networks Google DeepMind}},
-url = {https://arxiv.org/pdf/1605.06065.pdf},
-year = {2016}
-}
 @techreport{Santoro2018,
 abstract = {Memory-based neural networks model temporal data by leveraging an ability to remember information for long periods. It is unclear, however, whether they also have an ability to perform complex relational reasoning with the information they remember. Here, we first confirm our intuitions that standard memory architectures may struggle at tasks that heavily involve an understanding of the ways in which entities are connected-i.e., tasks involving relational reasoning. We then improve upon these deficits by using a new memory module-a Relational Memory Core (RMC)-which employs multi-head dot product attention to allow memories to interact. Finally, we test the RMC on a suite of tasks that may profit from more capable relational reasoning across sequential information, and show large gains in RL domains (e.g. Mini PacMan), program evaluation, and language modeling, achieving state-of-the-art results on the WikiText-103, Project Gutenberg, and GigaWord datasets.},
 archivePrefix = {arXiv},
@@ -1148,12 +1230,9 @@ title = {{Relational recurrent neural networks}},
 url = {https://arxiv.org/pdf/1806.01822.pdf},
 year = {2018}
 }
-@techreport{Santoro2017,
-abstract = {Relational reasoning is a central component of generally intelligent behavior, but has proven difficult for neural networks to learn. In this paper we describe how to use Relation Networks (RNs) as a simple plug-and-play module to solve problems that fundamentally hinge on relational reasoning. We tested RN-augmented networks on three tasks: visual question answering using a challenging dataset called CLEVR, on which we achieve state-of-the-art, superhuman performance; text-based question answering using the bAbI suite of tasks; and complex reasoning about dynamic physical systems. Then, using a curated dataset called Sort-of-CLEVR we show that powerful convolutional networks do not have a general capacity to solve relational questions, but can gain this capacity when augmented with RNs. Our work shows how a deep learning architecture equipped with an RN module can implicitly discover and learn to reason about entities and their relations.},
-archivePrefix = {arXiv},
-arxivId = {1706.01427v1},
-author = {Santoro, Adam and Raposo, David and Barrett, David G T and Malinowski, Mateusz and Pascanu, Razvan and Battaglia, Peter and Lillicrap, Timothy},
-eprint = {1706.01427v1},
+@article{Santoro,
+abstract = {Relational reasoning is a central component of generally intelligent behavior, but has proven difficult for neural networks to learn. In this paper we describe how to use Relation Networks (RNs) as a simple plug-and-play module to solve problems that fundamentally hinge on relational reasoning. We tested RN-augmented networks on three tasks: visual question answering using a challenging dataset called CLEVR, on which we achieve state-of-the-art, super-human performance; text-based question answering using the bAbI suite of tasks; and complex reasoning about dynamic physical systems. Then, using a curated dataset called Sort-of-CLEVR we show that powerful convolutional networks do not have a general capacity to solve relational questions, but can gain this capacity when augmented with RNs. Our work shows how a deep learning architecture equipped with an RN module can implicitly discover and learn to reason about entities and their relations.},
+author = {Santoro, Adam and Raposo, David and Barrett, David G T and Malinowski, Mateusz and Pascanu, Razvan and Battaglia, Peter and Lillicrap, Timothy and London, Deepmind},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Santoro et al. - 2017 - A simple neural network module for relational reasoning.pdf:pdf},
 title = {{A simple neural network module for relational reasoning}},
 url = {https://arxiv.org/pdf/1706.01427.pdf},
@@ -1212,13 +1291,24 @@ url = {http://www.ncbi.nlm.nih.gov/pubmed/30523106},
 volume = {362},
 year = {2018}
 }
-@techreport{Snell2017,
-abstract = {We propose Prototypical Networks for the problem of few-shot classification, where a classifier must generalize to new classes not seen in the training set, given only a small number of examples of each new class. Prototypical Networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class. Compared to recent approaches for few-shot learning, they reflect a simpler inductive bias that is beneficial in this limited-data regime, and achieve excellent results. We provide an analysis showing that some simple design decisions can yield substantial improvements over recent approaches involving complicated architectural choices and meta-learning. We further extend Prototypical Networks to zero-shot learning and achieve state-of-the-art results on the CU-Birds dataset.},
-author = {Snell, Jake and Swersky, Kevin and Zemel, Twitter Richard},
-file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Snell, Swersky, Zemel - 2017 - Prototypical Networks for Few-shot Learning.pdf:pdf},
-institution = {University of Toronto/Twitter},
+@article{Simonyan2014,
+abstract = {In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of networks of increasing depth using an architecture with very small (3x3) convolution filters, which shows that a significant improvement on the prior-art configurations can be achieved by pushing the depth to 16-19 weight layers. These findings were the basis of our ImageNet Challenge 2014 submission, where our team secured the first and the second places in the localisation and classification tracks respectively. We also show that our representations generalise well to other datasets, where they achieve state-of-the-art results. We have made our two best-performing ConvNet models publicly available to facilitate further research on the use of deep visual representations in computer vision.},
+archivePrefix = {arXiv},
+arxivId = {1409.1556},
+author = {Simonyan, Karen and Zisserman, Andrew},
+eprint = {1409.1556},
+file = {::},
+month = {sep},
+title = {{Very Deep Convolutional Networks for Large-Scale Image Recognition}},
+url = {http://arxiv.org/abs/1409.1556},
+year = {2014}
+}
+@article{Snell2017,
+abstract = {We propose prototypical networks for the problem of few-shot classification, where a classifier must generalize to new classes not seen in the training set, given only a small number of examples of each new class. Prototypical networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class. Compared to recent approaches for few-shot learning, they reflect a simpler inductive bias that is beneficial in this limited-data regime, and achieve excellent results. We provide an analysis showing that some simple design decisions can yield substantial improvements over recent approaches involving complicated architectural choices and meta-learning. We further extend prototypical networks to zero-shot learning and achieve state-of-the-art results on the CU-Birds dataset.},
+author = {Snell, Jake and Twitter, Kevin Swersky and Zemel, Richard S},
+file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Snell, Twitter, Zemel - Unknown - Prototypical Networks for Few-shot Learning.pdf:pdf},
 title = {{Prototypical Networks for Few-shot Learning}},
-url = {http://www.cs.toronto.edu/{~}zemel/documents/prototypical{\_}networks{\_}nips{\_}2017.pdf},
+url = {https://arxiv.org/pdf/1703.05175.pdf},
 year = {2017}
 }
 @article{Spitzer1939,
@@ -1406,7 +1496,7 @@ year = {2001}
 abstract = {In recent years deep reinforcement learning (RL) systems have attained superhuman performance in a number of challenging task domains. However, a major limitation of such applications is their demand for massive amounts of training data. A critical present objective is thus to develop deep RL methods that can adapt rapidly to new tasks. In the present work we introduce a novel approach to this challenge, which we refer to as deep meta-reinforcement learning. Previous work has shown that recurrent networks can support meta-learning in a fully supervised context. We extend this approach to the RL setting. What emerges is a system that is trained using one RL algorithm, but whose recurrent dynamics implement a second, quite separate RL procedure. This second, learned RL algorithm can differ from the original one in arbitrary ways. Importantly, because it is learned, it is configured to exploit structure in the training domain. We unpack these points in a series of seven proof-of-concept experiments, each of which examines a key aspect of deep meta-RL. We consider prospects for extending and scaling up the approach, and also point out some potentially important implications for neuroscience.},
 archivePrefix = {arXiv},
 arxivId = {arXiv:1611.05763v3},
-author = {Wang, J X and Kurth-Nelson, Z and Tirumala, D and Soyer, H and Leibo, J Z and Munos, R and Blundell, C and Kumaran, D and Botvinick, M},
+author = {Wang, Jane X and Kurth-Nelson, Zeb and Tirumala, D and Soyer, H and Leibo, J Z and Munos, R and Blundell, C and Kumaran, D and Botvinick, M},
 eprint = {arXiv:1611.05763v3},
 file = {:Users/guydavidson/Library/Application Support/Mendeley Desktop/Downloaded/Wang et al. - 2016 - Learning to Reinforcement Learn.pdf:pdf},
 title = {{Learning to Reinforcement Learn}},
