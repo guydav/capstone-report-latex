@@ -16,7 +16,7 @@
 
 %%% For early drafts without some of the frontmatter
 % Also see the "ifodd" command below to disable more frontmatter
-\documentclass[12pt]{puthesis}
+\documentclass[12pt,lot,lof]{puthesis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Author & title page info
@@ -65,7 +65,6 @@
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 \DeclareLanguageMapping{american}{american-apa}
 \bibliography{capstone}
-\newcommand{\possessivecite}[1]{\citeauthor{#1}'s \citeyear{#1}}
 
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
 
@@ -215,7 +214,7 @@
 \input{acknowledgements}
 }
 
-\dedication{To my parents.}
+\dedication{To Cheerios, whose \emph{joie de vivre} helps us all stay sane.\\To my siblings, Mor and Niv, for their neverending support from across the ocean.\\To my parents, Merav and Ron, who encourage me to dream big and live bigger.}
 
 \fi  % disable frontmatter
 
