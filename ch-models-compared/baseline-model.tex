@@ -9,8 +9,8 @@ The following schematic describes the model: the initial blocks are the convolut
 \begin{figure}[!htb]
 % \vspace{-0.225in}
 \centering
-\includegraphics[width=\linewidth]{ch-models-compared/figures/baseline.png}
-\caption[Baseline model diagram.]{{\bf Baseline model diagram.} The schematic does not include the concatenated query, and has ten output units, whereas in this case there are two units, yes and no. }
+\includegraphics[width=\linewidth]{ch-models-compared/figures/baseline.pdf}
+\caption[Baseline model diagram.]{{\bf Baseline model diagram.} The model is presented with an input image, which is passed through four convolutional layers groups, each including a convolutional layer, non-linearity (ReLU), batch-normalization and 2x2 max-pooling. After the fourth convolutional layer group, the representation is flattened to a vector and concatenated to the input query. The concatenated representation is then passed through four fully connected layers, before a final output layer with two units. \emph{Yellow layers:} convolutional layers, \emph{orange:} max-pooling, \emph{purple:} fully-connected, \emph{blue:} the input query.}
 \label{fig:baseline-model-diagram}
 % \vspace{-0.2in}
 \end{figure}
